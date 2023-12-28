@@ -49,45 +49,45 @@ span{
   display: inline-block;
   position: absolute;
 }
+
+/* 0.5 - tan (pi / 36) = 0.4125 */
 .span1{
-  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  clip-path: polygon(0 59%, 100% 50%, 0 41%);
   background-color: #fffb00;
   top: 120px;
   left: 0;
 }
 .span2{
-  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  clip-path: polygon(100% 59%, 0 50%, 100% 41%);
   background-color: #ff4fa1;
   top: 120px;
   right: 0;
 }
 .span3{
-  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  clip-path: polygon(50% 0%, 41% 100%, 59% 100%);
   background-color: #ffaa00;
   bottom: 0;
   left: 120px;
 }
 .span4{
-  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  clip-path: polygon(50% 100%, 59% 0, 41% 0);
   background-color: #22ff00;
   top: 0;
   left: 120px;
 }
 
 
-.box1 .span3 b{
-   transform: translate(-50%, -50%) rotate(-270deg);
-}
 .box1 .span1 b,
 .box2 .span1 b{
-  transform: translate(-50%, -50%) rotate(185deg);
+  transform: translate(-50%, -50%) rotate(180deg);
 }
+.box1 .span3 b,
 .box2 .span3 b{
   transform: translate(-50%, -50%) rotate(90deg);
 }
 .box1 .span4 b,
 .box2 .span4 b{
-  transform: translate(-50%, -50%) rotate(-85deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .box2{
