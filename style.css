@@ -53,55 +53,74 @@ span{
 /* 0.5 - tan (pi / 36) = 0.4125 */
 .span1{
   clip-path: polygon(0 59%, 100% 50%, 0 41%);
-  background-color: #fffb00;
   top: 120px;
   left: 0;
 }
 .span2{
   clip-path: polygon(100% 59%, 0 50%, 100% 41%);
-  background-color: #ff4fa1;
   top: 120px;
   right: 0;
 }
 .span3{
   clip-path: polygon(50% 0%, 41% 100%, 59% 100%);
-  background-color: #ffaa00;
   bottom: 0;
   left: 120px;
 }
 .span4{
   clip-path: polygon(50% 100%, 59% 0, 41% 0);
-  background-color: #22ff00;
   top: 0;
   left: 120px;
 }
 
-
-.box1 .span1 b,
-.box2 .span1 b{
-  transform: translate(-50%, -50%) rotate(180deg);
-}
-.box1 .span3 b,
-.box2 .span3 b{
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-.box1 .span4 b,
-.box2 .span4 b{
-  transform: translate(-50%, -50%) rotate(-90deg);
-}
-
-.box2{
-  width: 100%;
-  height: 100%;
-  transform: rotate(-135deg);
-}
 span b{
   font-size: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-25%, -50%);
+}
+.span1 b{
+  transform: translate(-75%, -50%) rotate(180deg);
+}
+.span3 b{
+  transform: translate(-50%, 0%) rotate(90deg);
+}
+.span4 b{
+  transform: translate(-50%, -75%) rotate(-90deg);
+}
 
+.innerbox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box1{
+  transform: rotate(0deg);
+}
+.box2{
+  transform: rotate(-10deg);
+}
+.box3{
+  transform: rotate(-20deg);
+}
+.box4{
+  transform: rotate(-30deg);
+}
+.box5{
+  transform: rotate(-40deg);
+}
+.box6{
+  transform: rotate(-50deg);
+}
+.box7{
+  transform: rotate(-60deg);
+}
+.box8{
+  transform: rotate(-70deg);
+}
+.box9{
+  transform: rotate(-80deg);
 }
 
 .spin{
@@ -131,7 +150,54 @@ span b{
 }
 @keyframes animateArrow{
   50%{
-    right: -40px;
+  right: -40px;
   }
 }
 
+.green1 {
+  background-color: #9CF7C8;
+}
+
+.green2 {
+  background-color: #31DB83;
+}
+
+.yellow1 {
+  background-color: #F1F6AC;
+}
+
+.yellow2 {
+  background-color: #EDF839;
+}
+
+.orange1 {
+  background-color: #F1D4B0;
+}
+
+.orange2 {
+  background-color: #F99A36;
+}
+
+.red1 {
+  background-color: #F9BBAA;
+}
+
+.red2 {
+  background-color: #F9663D;
+}
+
+.purple1 {
+  background-color: #F2A3F1;
+}
+
+.purple2 {
+  background-color: #F342F0;
+}
+
+.blue1 {
+  background-color: #A6E0F7;
+}
+
+.blue2 {
+  background-color: #3EBDF0;
+}
