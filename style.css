@@ -15,7 +15,6 @@ body{
   min-height: 100vh;
   overflow: hidden;
   background: black;
-  /* background: linear-gradient(90deg, rgba(60,60,242,1) 0%, rgba(98,245,230,1) 52%, rgba(60,60,242,1) 100%); */
   background-size: cover;
 }
 
@@ -79,46 +78,19 @@ span{
   height: 50%;
   display: inline-block;
   position: absolute;
-}
-
-/* 0.5 - tan (pi / 36) = 0.4125 */
-.span1{
-  clip-path: polygon(0 59%, 100% 50%, 0 41%);
-  top: 120px;
-  left: 0;
-}
-.span2{
+  /* 0.5 - tan (pi / 36) = 0.4125 */
   clip-path: polygon(100% 59%, 0 50%, 100% 41%);
   top: 120px;
   right: 0;
 }
-.span3{
-  clip-path: polygon(50% 0%, 41% 100%, 59% 100%);
-  bottom: 0;
-  left: 120px;
-}
-.span4{
-  clip-path: polygon(50% 100%, 59% 0, 41% 0);
-  top: 0;
-  left: 120px;
-}
 
-span .b{
+span div{
   font-size: 24px;
   position: absolute;
   color: black;
   top: 50%;
   left: 50%;
-  transform: translate(10%, -50%);
-}
-.span1 .b{
-  transform: translate(-90%, -50%) rotate(180deg);
-}
-.span3 .b{
-  transform: translate(-50%, 110%) rotate(90deg);
-}
-.span4 .b{
-  transform: translate(-50%, -190%) rotate(-90deg);
+  transform: translate(-5%, -50%);
 }
 
 .innerbox{
@@ -153,6 +125,87 @@ span .b{
 }
 .box9{
   transform: rotate(-80deg);
+}
+.box10{
+  transform: rotate(-90deg);
+}
+.box11{
+  transform: rotate(-100deg);
+}
+.box12{
+  transform: rotate(-110deg);
+}
+.box13{
+  transform: rotate(-120deg);
+}
+.box14{
+  transform: rotate(-130deg);
+}
+.box15{
+  transform: rotate(-140deg);
+}
+.box16{
+  transform: rotate(-150deg);
+}
+.box17{
+  transform: rotate(-160deg);
+}
+.box18{
+  transform: rotate(-170deg);
+}
+.box19{
+  transform: rotate(-180deg);
+}
+.box20{
+  transform: rotate(-190deg);
+}
+.box21{
+  transform: rotate(-200deg);
+}
+.box22{
+  transform: rotate(-210deg);
+}
+.box23{
+  transform: rotate(-220deg);
+}
+.box24{
+  transform: rotate(-230deg);
+}
+.box25{
+  transform: rotate(-240deg);
+}
+.box26{
+  transform: rotate(-250deg);
+}
+.box27{
+  transform: rotate(-260deg);
+}
+.box28{
+  transform: rotate(-270deg);
+}
+.box29{
+  transform: rotate(-280deg);
+}
+.box30{
+  transform: rotate(-290deg);
+}
+.box31{
+  transform: rotate(-300deg);
+}
+.box32{
+  transform: rotate(-310deg);
+}
+.box33{
+  transform: rotate(-320deg);
+}
+.box34{
+  transform: rotate(-330deg);
+}
+.box35{
+  transform: rotate(-340deg);
+}
+.box36{
+  transform: rotate(-350deg);
 }
 
 .spin{

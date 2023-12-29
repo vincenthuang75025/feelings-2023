@@ -6,6 +6,6 @@ readme
 
 deploy
 
-i think we can refactor into 36 separate guys instead of 4 x 9.. maybe. offsets will all be wrong though :/
+re-record w 25 start
 
 vibes are off
