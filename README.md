@@ -5,7 +5,3 @@ TODO:
 readme
 
 deploy
-
-re-record w 25 start
-
-vibes are off

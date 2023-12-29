@@ -220,7 +220,6 @@ span div{
   background-color: black;
   color: #fff;
   box-shadow: 0 5px 20px #000;
-  /* font-weight: bold; */
   font-size: 22px;
   cursor: pointer;
 }
@@ -228,15 +227,6 @@ span div{
   width: 70px;
   height: 70px;
   font-size: 20px;
-}
-
-.mainbox.animate:after{
-  animation: animateArrow 0.2s ease infinite;
-}
-@keyframes animateArrow{
-  25%{
-  right: -40px;
-  }
 }
 
 .green1 {
