@@ -7,14 +7,14 @@
 
 
 body{
-  font-family: Open Sans;
+  font-family: 'Schoolbell', arial, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
-  background: rgb(60,60,242);
-  background: linear-gradient(90deg, rgba(60,60,242,1) 0%, rgba(98,245,230,1) 52%, rgba(60,60,242,1) 100%);
+  background: black;
+  /* background: linear-gradient(90deg, rgba(60,60,242,1) 0%, rgba(98,245,230,1) 52%, rgba(60,60,242,1) 100%); */
   background-size: cover;
 }
 
@@ -41,7 +41,7 @@ body{
   border-radius: 50%;
   border: 10px solid #fff;
   overflow: hidden;
-  transition: all ease 5s;
+  transition: all ease 2s;
 }
 span{
   width: 50%;
@@ -72,21 +72,21 @@ span{
   left: 120px;
 }
 
-span b{
+span .b{
   font-size: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -50%);
+  transform: translate(10%, -50%);
 }
-.span1 b{
-  transform: translate(-75%, -50%) rotate(180deg);
+.span1 .b{
+  transform: translate(-90%, -50%) rotate(180deg);
 }
-.span3 b{
-  transform: translate(-50%, 0%) rotate(90deg);
+.span3 .b{
+  transform: translate(-50%, 110%) rotate(90deg);
 }
-.span4 b{
-  transform: translate(-50%, -75%) rotate(-90deg);
+.span4 .b{
+  transform: translate(-50%, -190%) rotate(-90deg);
 }
 
 .innerbox{
@@ -128,14 +128,14 @@ span b{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 4px solid #fff;
-  background-color: #001aff;
+  background-color: black;
   color: #fff;
   box-shadow: 0 5px 20px #000;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 22px;
   cursor: pointer;
 }
@@ -146,10 +146,10 @@ span b{
 }
 
 .mainbox.animate:after{
-  animation: animateArrow 0.7s ease infinite;
+  animation: animateArrow 0.2s ease infinite;
 }
 @keyframes animateArrow{
-  50%{
+  25%{
   right: -40px;
   }
 }
@@ -159,7 +159,7 @@ span b{
 }
 
 .green2 {
-  background-color: #31DB83;
+  background-color: #00B866;
 }
 
 .yellow1 {
@@ -167,7 +167,7 @@ span b{
 }
 
 .yellow2 {
-  background-color: #EDF839;
+  background-color: #E5DB00;
 }
 
 .orange1 {
@@ -187,17 +187,17 @@ span b{
 }
 
 .purple1 {
-  background-color: #F2A3F1;
+  background-color: #DAAFC3;
 }
 
 .purple2 {
-  background-color: #F342F0;
+  background-color: #EE698E;
 }
 
 .blue1 {
-  background-color: #A6E0F7;
+  background-color: #61B0C5;
 }
 
 .blue2 {
-  background-color: #3EBDF0;
+  background-color: #0A7EA9;
 }

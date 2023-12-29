@@ -1,8 +1,8 @@
 function myfunction(){
 
 
-	var x = 1024; //min value
-	var y = 9999; // max value
+	var x = 360*2; //min value
+	var y = 360*5; // max value
 
 	var deg = Math.floor(Math.random() * (x - y)) + y;
 
@@ -12,7 +12,7 @@ function myfunction(){
 	element.classList.remove('animate');
 	setTimeout(function(){
 		element.classList.add('animate');
-	}, 5000); //5000 = 5 second
+	}, 2000); //5000 = 5 second
 }
 
 window.onload = () => {
