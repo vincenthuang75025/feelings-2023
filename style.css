@@ -22,18 +22,27 @@ body{
 .flex-row {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 
 .flex-row-child {
   flex-basis: 100%;
-  padding: 32px;
+  padding: 32px 0px 32px 32px;
 }
 
 .feeling {
-  padding: 20% 0% 0% 10%;
-  height: 50%;
+  padding: 20% 0% 0% 0%;
+  height: 35%;
+}
+.feeling-content {
+  padding: 10% 0% 0% 0%;
+  height: 65%;
+  width: 100%;
+  font-style: italic;
+  background: black;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mainbox{
@@ -46,7 +55,7 @@ body{
   content: '';
   width: 32px;
   height: 32px;
-  background: url('arrow-left.png') no-repeat;
+  background: url('img/arrow-left.png') no-repeat;
   background-size: 32px;
   right: -30px;
   top: 50%;
