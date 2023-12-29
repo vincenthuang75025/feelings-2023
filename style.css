@@ -36,12 +36,13 @@ center {
 
 .feeling {
   padding: 32px 0% 0% 0%;
-  height: 25%;
+  height: 30%;
+  width: 70%;
 }
 .feeling-content {
   padding: 10% 0% 0% 0%;
   height: 65%;
-  width: 100%;
+  width: 70%;
   font-style: italic;
   background: black;
   background-size: contain;
