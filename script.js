@@ -1,10 +1,19 @@
+var iteration = -1;
+
+const NUM_SECTORS = 36;
+
 function myfunction() {
 
 
-	var x = 360 * 2; //min value
-	var y = 360 * 5; // max value
+	iteration = (iteration + 1) % NUM_SECTORS;
 
-	var deg = Math.floor(Math.random() * (x - y)) + y;
+	var index = ORDER[iteration]
+
+	var deg = index * 10;
+
+	if (iteration % 2 == 0) {
+		deg += 720;
+	}
 
 	// console.log(deg % 360);
 
@@ -14,8 +23,9 @@ function myfunction() {
 	element.classList.remove('animate');
 	setTimeout(function () {
 		element.classList.add('animate');
-		angle = (5 + deg) % 360; // 5 is because of initial offset and 10 degree sectors
-		var feeling = FEELINGS[Math.floor(angle / 10) % 36];
+		// angle = (5 + deg) % 360; // 5 is because of initial offset and 10 degree sectors
+		// var feeling = FEELINGS[Math.floor(angle / 10) % 36];
+		var feeling = FEELINGS[index]
 		document.getElementById("feeling").textContent = MOMENTS[feeling];
 		if (feeling in TEXTS) {
 			document.getElementById("feeling-content").textContent = TEXTS[feeling];
@@ -26,6 +36,8 @@ function myfunction() {
 		}
 	}, 2000);
 }
+
+const ORDER = [25, 17, 9, 27, 2, 22, 11, 18, 4, 20, 1, 25, 3, 16, 30, 21, 31, 28, 33, 29, 5, 23, 32, 7, 24, 10, 12, 35, 19, 6, 13, 0, 26, 34, 15, 8, 14];
 
 const FEELINGS = ["skeptical", "irritated", "jealous", "angry", "hostile", "hurt",
 	"tired", "bored", "lonely", "heartbroken", "ashamed", "guilty",
@@ -39,7 +51,7 @@ const MOMENTS = {
 	"tired": "sleeping in classrooms for a week", "bored": "waiting for training experiments to run...", "lonely": "moving into a house with 39 strangers", "heartbroken": "leaving friends and Boston and MIT", "ashamed": "voice cracking during the literal climax of a concert", "guilty": "when I didn't bother trying to help someone because I assumed I couldn't help",
 	"thankful": "for being on a team where work doesn't feel like work", "trusting": "opening my heart up to friends and strangers, over and over and over", "care": "for the health of my friends starting companies", "loved": "getting consoled by friends post-breakup", "pensive": "deciding whether or not to join Imbue", "relaxed": "napping on a glacier, feeling the sun on my face and the ice on my back",
 	"confident": "overcoming my fear of the Mission District", "important": "assembling a sound system for an a cappella concert", "appreciated": "friends telling me I inspire them \uD83E\uDD7A", "enlightened": "finally understanding refraction after ~10 years (thanks 3B1B!)", "accomplished": "emceeing MIT's largest dance show", "surprised": "realizing my former boss liked me and what I interpreted as dislike was just an esclating series of miscommunications",
-	"hopeful": "the first non-sucky day in SF, when I found a cool park and got my glasses fixed and saw friends at a party", "creative": "visiting Shinkai's real-life anime inspirations", "cheerful": "playing with the dogs at work!", "energetic": "doing the crosstown trail with friends <3", "fascinated": "seeing a hybrid-use bookstore, cafe, and music venue", "daring": "driving through a snowstorm in Iceland",
+	"hopeful": "my first non-sucky day in SF, when I found a cool park and got my glasses fixed and saw friends at a party", "creative": "visiting Shinkai's real-life anime inspirations", "cheerful": "playing with the dogs at work!", "energetic": "doing the crosstown trail with friends <3", "fascinated": "seeing a hybrid-use bookstore, cafe, and music venue", "daring": "driving through a snowstorm in Iceland (I'd never driven in winter weather before)",
 	"overwhelmed": "debugging massive hardware failures", "insecure": "thinking about SF dating dynamics", "inadequate": "spending 10 hours failing to set up basic devtools on my first day of work", "helpless": "when panic attacks and a racing heart kept me up until 6am", "discouraged": "months of minor leg injuries and anxiety relapses", "confused": "attending a cat party"
 }
 
