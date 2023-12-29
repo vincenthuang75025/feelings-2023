@@ -2,29 +2,21 @@ var iteration = -1;
 
 const NUM_SECTORS = 36;
 
-function myfunction() {
-
-
+myfunction = () => {
 	iteration = (iteration + 1) % NUM_SECTORS;
-
 	var index = ORDER[iteration]
 
 	var deg = index * 10;
-
-	if (iteration % 2 == 0) {
+	if (iteration % 2 == 0) { // so that we spin a couple revolutions each time
 		deg += 720;
 	}
-
-	// console.log(deg % 360);
 
 	document.getElementById('box').style.transform = "rotate(" + deg + "deg)";
 
 	var element = document.getElementById('mainbox');
 	element.classList.remove('animate');
-	setTimeout(function () {
+	setTimeout(() => {
 		element.classList.add('animate');
-		// angle = (5 + deg) % 360; // 5 is because of initial offset and 10 degree sectors
-		// var feeling = FEELINGS[Math.floor(angle / 10) % 36];
 		var feeling = FEELINGS[index]
 		document.getElementById("feeling").textContent = MOMENTS[feeling];
 		if (feeling in TEXTS) {
@@ -37,7 +29,7 @@ function myfunction() {
 	}, 2000);
 }
 
-const ORDER = [25, 17, 9, 27, 2, 22, 11, 18, 4, 20, 1, 25, 3, 16, 30, 21, 31, 28, 33, 29, 5, 23, 32, 7, 24, 10, 12, 35, 19, 6, 13, 0, 26, 34, 15, 8, 14];
+const ORDER = [17, 9, 27, 2, 22, 11, 18, 4, 20, 1, 25, 3, 16, 30, 21, 31, 28, 33, 29, 5, 23, 32, 7, 24, 10, 12, 35, 19, 6, 13, 0, 26, 34, 15, 8, 14];
 
 const FEELINGS = ["skeptical", "irritated", "jealous", "angry", "hostile", "hurt",
 	"tired", "bored", "lonely", "heartbroken", "ashamed", "guilty",
