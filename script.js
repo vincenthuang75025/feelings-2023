@@ -21,10 +21,10 @@ myfunction = () => {
 		document.getElementById("feeling").textContent = MOMENTS[feeling];
 		if (feeling in TEXTS) {
 			document.getElementById("feeling-content").textContent = TEXTS[feeling];
-			document.getElementById("feeling-content").style.backgroundImage = "url(null.png)";
+			document.getElementById("feeling-content").style.backgroundImage = "url(null.jpeg)";
 		} else {
 			document.getElementById("feeling-content").textContent = "";
-			document.getElementById("feeling-content").style.backgroundImage = 'url("img/' + feeling + '.png")';
+			document.getElementById("feeling-content").style.backgroundImage = 'url("img/' + feeling + '.jpeg")';
 		}
 	}, 2000);
 }
